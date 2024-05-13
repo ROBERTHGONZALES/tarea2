@@ -28,7 +28,7 @@ int main() {
         suma += num;
     }
 
-    double promedio = suma / numeros;
+    double promedio = static_cast<double>(suma) / numeros.size();
 
     ofstream resultado("resultado.txt");
     if (!resultado.is_open()) {
